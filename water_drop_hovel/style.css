@@ -1,0 +1,38 @@
+div#outside
+{
+	border: 2px solid black;
+	width: 500px;
+	height: 300px;
+	display: flex;
+}
+
+div.inside
+{
+	width: 1%;
+	background-color: lightgray;
+}
+
+div.inside
+{
+	border-top: 0px solid darkgray;
+	//animation-play-state: paused;
+	//animation: fill_border paused;
+
+	animation-name: fill_border;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-play-state: paused;
+}
+
+div.inside:hover
+{
+	animation-play-state: running;
+}
+
+@keyframes fill_border
+{
+	0% {border-top: 0px solid darkgray;}
+	100% {border-top: 300px solid darkgray;}
+}
+
