@@ -1,0 +1,108 @@
+div#contor
+{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+}
+
+div#linie
+{
+	position: absolute;
+	width: 45%;
+	height: 3%;
+	top: 50%;
+	left:50%;
+	float: right;
+	background: magenta;
+	animation:linie_miscare 1s linear infinite;
+	transform-origin:0px 5px;
+	transform:rotate(0deg);
+	opacity: 0.5;
+
+}
+
+@keyframes linie_miscare
+{
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+div.numar
+{
+	/*display: none;*/
+	position: absolute;
+
+	border: 5px solid brown;
+	border-style: inset;
+
+	width: 20%;
+	height: 20%;
+	/*background: blue;*/
+	opacity: 0;
+	font-size: 50px;
+	text-align: center;
+	padding: 40%;
+
+
+}
+
+div#nr5
+{
+	animation:anim_cinci 5s linear infinite;
+}
+@keyframes anim_cinci
+{
+	0%{	opacity: 0;}
+	1%{opacity: 1; background: blue;}
+	20%{opacity: 1; background: red;}
+	21%{opacity: 0;}
+}
+
+div#nr4
+{
+	animation:anim_patru 5s linear infinite;
+}
+@keyframes anim_patru
+{
+	20%{opacity: 0;}
+	21%{opacity: 1; background: blue;}
+	40%{opacity: 1; background: red;}
+	41%{opacity: 0;}
+}
+
+div#nr3
+{
+	animation:anim_trei 5s linear infinite;
+}
+@keyframes anim_trei
+{
+	40%{opacity: 0;}
+	41%{opacity: 1; background: blue;}
+	60%{opacity: 1; background: red;}
+	61%{opacity: 0;}
+}
+
+div#nr2
+{
+	animation:anim_doi 5s linear infinite;
+}
+@keyframes anim_doi
+{
+	60%{opacity: 0;}
+	61%{opacity: 1; background: blue;}
+	80%{opacity: 1; background: red;}
+	81%{opacity: 0;}
+}
+
+div#nr1
+{
+	animation:anim_unu 5s linear infinite;
+}
+@keyframes anim_unu
+{
+	80%{opacity: 0;}
+	81%{opacity: 1; background: blue;}
+	100%{opacity: 1; background: red;}
+}

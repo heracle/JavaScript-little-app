@@ -1,0 +1,57 @@
+
+div#umbra
+{
+	position: relative;
+	height: 30px;
+	width: 80px;
+	z-index: 2;
+	background: white;
+}
+
+div#container
+{
+	position: relative;
+	height: 30px;
+	width: 80px;
+	background: skyblue;
+	z-index: 1;
+}
+
+div.lit
+{
+	position: relative;
+	display: inline-block;
+	padding: 4px;
+	z-index: 1;
+	top: -20px;
+	transition: top 2s linear;
+}
+div#container:hover .lit
+{
+	top: 5px;
+}
+
+div#a{
+}
+div#container:hover #a
+{
+
+}
+
+div#b{
+
+}
+div#container:hover #b
+{
+	 transition-delay: 2s;
+}
+
+div#c{
+
+
+}
+div#container:hover #c
+{
+	
+	 transition-delay: 4s;
+}
