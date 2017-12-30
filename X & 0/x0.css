@@ -1,0 +1,16 @@
+.jucator{
+	float:left;
+	width:40%;
+	border:1px solid lime;
+	box-sizing:border-box;
+	margin-right:5%;
+	padding-left:2%;
+	padding-right:2%;
+}
+
+.tabla{
+	width:200px;
+	height:200px;
+	border:1px solid skyblue;
+	margin-bottom:10px;
+}
