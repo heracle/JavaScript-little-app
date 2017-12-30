@@ -226,6 +226,17 @@ function make_buttons()
 
 		node.onclick = function(){ press(this) } ;
 	}
+
+
+	var node = document.createElement("BUTTON");
+	node.onclick = function() {restart_table()};
+	node.innerHTML = "restart table";
+	node.style.position = "absolute";
+
+	node.style.left = "300px";
+	node.style.top = "40px";
+
+	document.body.appendChild(node);
 }
 
 window.onload=function(){

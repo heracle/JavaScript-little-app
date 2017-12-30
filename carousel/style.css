@@ -1,0 +1,11 @@
+div#game
+{
+	background: #F5F5DC;
+	position: relative;
+}
+
+div.pivot
+{
+	background: brown;
+	z-index: 2;
+}
